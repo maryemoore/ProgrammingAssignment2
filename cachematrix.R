@@ -7,12 +7,12 @@
 ## The first function, makeCacheMatrix, creates a list of functions that
 ## first, set the value of the matrix within the function
 ## second, return the value of the matrix within the function
-## third, set the inverse value of the function in the 
-## parent environment of the function
-## fourth, return the inverse value of the function within the 
+## third, set the inverse value of the matrix in the 
+## environment of the function
+## fourth, return the inverse value of the matrix within the 
 ## envrionment of the function
-## fith, compile all of these functions into a list that can be called
-## on by another function
+## fifth, compile all of these functions into a cached list that 
+## can be called on by another function
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
@@ -31,8 +31,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The second function, cacheSolve, takes the output list of functions
-## and cached objects from the MakeCacheMatrix function
+## The second function, cacheSolve, takes the output list of functions 
+## and cached objects from the makeCacheMatrix function
 ## and either returns the cached inverted matrix or 
 ## computes the inverted matrix and returns it.
 
